@@ -1,0 +1,155 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: white;
+     font-size: 18px;
+     line-height: 1.4;
+     font-family: 'Open Sans', sans-serif;
+     font-family: 'Comfortaa', cursive;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 100%;
+	margin: auto;
+}
+
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+.markComplete{
+  color: grey;
+  text-decoration: line-through;
+
+}
+
+#main{
+  text-align: center;
+  background-color: #BE90D4;
+  border: 1px solid #BE90D4;
+  border-radius: 10px;
+  width: 50%;
+  height: 600px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+img{
+  float: left;
+  width:3%;
+  height:600px;
+  margin-right: 3%;
+}
+
+ #main > h1{
+   background-color: #68C3A3;
+   width: 70%;
+   margin-left: 15%;
+   margin-right: 15%;
+   border-radius: 5px;
+
+  }
+button, #add-todo-item{
+  background-color:#68C3A3;
+  font-weight:700;
+  color: white;
+  height:40px;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 2%;
+}
+
+.new{
+  background-color:#68C3A3;
+  font-weight:700;
+  color: white;
+  height:auto;
+  width: auto;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1%;
+  margin-left: 2%;
+}
+#clearDone{
+  width: 120px;
+}
+
+#add-todo-item:hover, button:hover{
+  background-color: #1BBC9B;
+}
+
+#new-todo-item{
+  height:40px;
+  width:50%;
+}
+
+ul{
+  list-style-image:url(https://annieselke.com/_ui/desktop/theme-freshamerican/js/images/wf-checkbox-empty.png);
+  list-style-position: inside;
+  background-color:#D6A2E8;
+  color:white;
+  width:60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
