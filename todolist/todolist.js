@@ -7,7 +7,7 @@ $("#formToDo").on('submit',function(e){
   $('#new-todo-item').val('');
   updateListCount();
 })
-
+//when changes are made (items added or removed) the amount of tasks is reflected with each change
 function updateListCount(){
   var count= $("li").length;
   $("h3").text("You have "+count+ " task(s) left!");
@@ -29,6 +29,7 @@ $(document).ready(function(){
    $(this).toggleClass("markComplete");
 
 })
+  //hover that will show and hide appended buttons
 $("ul").on("mouseleave" ,"li", function (){
     $(".delete, .edit").hide();
     $(".delete, .edit").addClass("new");
@@ -41,11 +42,6 @@ $("ul").on("mouseenter" ,"li", function (){
 });
 
 });
-
-//trying to put the value of the list into an input
-
-
-
 
 //clear the items with new class--that is mark completed
 $( "#clearDone" ).click(function() {
@@ -61,7 +57,3 @@ $(document).on("click", '.edit', function () {
     return false;
   });
 
-  /*$('#listContainer').on('click', '.edit',function(){
-      var editInput = $(this).parent().val();
-      $(this).parent().replaceWith( '<li> <input type="text" id=newEditInput value=""> </li>' )
-  });*/
